@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:starter_flutter_bloc_pattern/assets/colors.dart';
+import 'package:starter_flutter_bloc_pattern/app/AppColors.dart';
 import 'package:starter_flutter_bloc_pattern/src/blocs/usersBloc.dart';
 import 'package:starter_flutter_bloc_pattern/src/models/userModel.dart';
 
@@ -66,7 +66,7 @@ class _UserListScreenState extends State<UserListScreen> {
     return Column(
       children: <Widget>[
         ListView.separated(
-          separatorBuilder:(BuildContext context, int index) => Divider( color: primaryColor,) ,
+          separatorBuilder:(BuildContext context, int index) => Divider( color: ColorsSets.primaryColor,) ,
             controller: _scrollController,
             shrinkWrap: true,
             itemCount: eventList.results.length,
